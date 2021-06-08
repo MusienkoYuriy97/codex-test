@@ -1,0 +1,51 @@
+POST localhost:8080/admin/save
+Content-Type: application/json
+X-Token:d9247ace-e959-4536-9d7f-3cdc3a0aa9b9
+
+{
+  "name": "Audi",
+  "description": "is a German automobile manufacturer that designs, engineers, produces, markets and distributes luxury vehicles. Audi is a subsidiary of Volkswagen Group and has its roots at Ingolstadt, Bavaria, Germany. Audi vehicles are produced in nine production facilities worldwide.",
+  "tags": ["audi","automobile"]
+}
+
+###
+
+POST localhost:8080/admin/save
+Content-Type: application/json
+X-Token:d9247ace-e959-4536-9d7f-3cdc3a0aa9b9
+
+{
+  "name": "BMW",
+  "description": "Bayerische Motoren Werke AG, commonly known as Bavarian Motor Works, BMW or BMW AG, is a German automobile, motorcycle and engine manufacturing company founded in 1916. BMW is headquartered in Munich, Bavaria. It also owns and produces Mini cars, and is the parent company of Rolls-Royce Motor Cars.",
+  "tags": ["bmw","automobile"]
+}
+
+###
+
+DELETE localhost:8080/admin/remove?productName=BMW
+Content-Type: application/json
+X-Token:dfc58613-20ad-418e-a486-a1a9398c987e
+
+###
+
+PUT localhost:8080/admin/update
+Content-Type: application/json
+X-Token:dfc58613-20ad-418e-a486-a1a9398c987e
+
+{
+"name": "BMW",
+"description": "arent company of Rolls-Royce Motor Cars.",
+"tags": ["bmw","automobile"]
+}
+
+###
+
+PUT localhost:8080/admin/forceupdate
+Content-Type: application/json
+X-Token:d9247ace-e959-4536-9d7f-3cdc3a0aa9b9
+
+{
+  "name": "BMW",
+  "description": "arent company of Rolls-Royce Motor Cars.",
+  "tags": ["bmw","automobile"]
+}

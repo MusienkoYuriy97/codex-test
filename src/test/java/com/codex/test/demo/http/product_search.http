@@ -1,0 +1,13 @@
+GET localhost:8080/search/tag?tag=bmw
+Content-Type: application/json
+X-Token:d9247ace-e959-4536-9d7f-3cdc3a0aa9b9
+
+###
+
+GET localhost:8080/search/description
+Content-Type: application/json
+X-Token:7a752cef-dfe6-4e73-8acf-fefb62c4cf9e
+
+{
+  "description": "Bayerische Motoren Werke AG"
+}

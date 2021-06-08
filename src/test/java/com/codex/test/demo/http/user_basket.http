@@ -1,0 +1,17 @@
+POST localhost:8080/basket/add?productName=Audi
+Content-Type: application/json
+X-Token:9a572a76-9513-4022-bd4c-818d0268f3f4
+
+###
+
+POST localhost:8080/basket/buy
+Content-Type: application/json
+X-Token:97df0e39-b79c-4c65-b1f5-1f6cb2695705
+
+###
+
+DELETE localhost:8080/basket/remove?productName=Audi
+Content-Type: application/json
+X-Token:a3b71f0e-fcbc-41cb-9ec6-40122fbdb09e
+
+###

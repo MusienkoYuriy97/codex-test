@@ -1,0 +1,24 @@
+POST localhost:8080/user/reg
+Content-Type: application/json
+
+{
+  "username": "jussik97",
+  "email": "musienko@gmail.com",
+  "password": "1234"
+}
+
+###
+
+GET localhost:8080/user/auth?username=jussik97&password=1234
+Content-Type: application/json
+
+###
+
+GET localhost:8080/user/auth?username=Admin&password=1111
+Content-Type: application/json
+
+###
+
+GET localhost:8080/user/logout
+Content-Type: application/json
+X-Token:2d7cdfac-d14a-49b3-906a-b0c64fc9c255
